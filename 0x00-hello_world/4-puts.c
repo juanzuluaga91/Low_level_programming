@@ -1,6 +1,9 @@
 #include <stdio.h.>
-int main()
+#include <string.h>
+int main(void)
 {
-    printf(""Programming is like building a multilingual puzzle");
-    return 0;
+char string[40];
+strcpy(str, "Programming is like building a multilingual puzzle\n");
+puts(string);
+return (0);
 }
