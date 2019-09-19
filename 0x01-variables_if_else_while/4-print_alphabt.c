@@ -1,9 +1,7 @@
 #include <stdio.h>
 /**
  * main - Accept empty value
- * write - Screen information
- * @void: Description of a empty parameter
- *
+ * Return: (0) if is correct
  * Description: Write a program that prints the alphabet in
  * lowercase, followed by a new line.
  */
