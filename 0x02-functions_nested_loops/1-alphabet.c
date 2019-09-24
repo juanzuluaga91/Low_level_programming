@@ -1,4 +1,3 @@
-  
 #include "holberton.h"
 /**
  * print_alphabet - entry point
