@@ -1,16 +1,13 @@
-#include "holberton.h"
 /**
- * swap_int - Swap integer between them.
- *
- * @a: integer to point out
- * @b: integer to point out
- *
- * Return: Sit a pointer to n variable
+ * swap_int - switches value of first input with the value of the second input.
+ * @a: First value to swap.
+ * @b: Second value to swap.
  */
 void swap_int(int *a, int *b)
 {
-int ch;
-ch = *a;
-*a = 42;
-*b = ch;
+	int ch;
+
+	ch = *a;
+	*a = *b;
+	*b = ch;
 }
