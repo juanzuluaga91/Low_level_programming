@@ -4,22 +4,22 @@
  */
 void rev_string(char *s)
 {
-	int i, j;
-	char r[1000];
+	int ch, x;
+	char z[1000];
 
 
-	i = j = 0;
-	while (s[i] != '\0')
+	ch = x = 0;
+	while (s[ch] != '\0')
 	{
-		r[i] = s[i];
-		i++;
+		z[ch] = s[ch];
+		ch++;
 	}
-	i--;
-	while (i >= 0)
+	ch--;
+	while (ch >= 0)
 	{
-		s[i] = r[j];
-		i--;
-		j++;
+		s[ch] = z[x];
+		ch--;
+		x++;
 	}
-	s[j++] = '\0';
+	s[x++] = '\0';
 }
