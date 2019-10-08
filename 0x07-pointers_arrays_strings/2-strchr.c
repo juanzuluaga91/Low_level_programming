@@ -1,25 +1,24 @@
 #include "holberton.h"
 
 /**
- * _strspn - gets lengthof a prefix substring
- * @s: string to check
- * @accept: string to check against
+ * _strpbrk - search a string for any of a set of bytes
+ * @s: the string to search
+ * @accept: the byte(s) to match
  *
- * Return: number of bytes of s in accept
+ * Return: pointer to the byte in s that matches  one  of  the  bytes  in
+ * accept, or NULL if no such byte is found.
  */
-unsigned int _strspn(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
-	unsigned int i, j;
+	char *accept_pos;
 
-	for (i = 0; s[i]; i++)
+	for ( ; *s; ++s)
 	{
-		for (j = 0; accept[j]; j++)
+		for (accept_pos = accept; *accept_pos; ++accept_pos)
 		{
-			if (s[i] == accept[j])
-				break;
+			if (*s == *accept_pos)
+				return (s);
 		}
-		if (!accept[j])
-			break;
 	}
-	return (i);
+	return (NULL);
 }
