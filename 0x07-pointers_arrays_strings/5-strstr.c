@@ -1,3 +1,4 @@
+  
 #include "holberton.h"
 
 /**
@@ -5,25 +6,24 @@
  * @haystack: string to search
  * @needle: substring to search for
  *
- * Description: Find the first occurrence of the substring needle in the
- * string haystack. The terminating null bytes ('\0') are not compared.
+ * Description: function that locates a substring.
  *
  * Return: a pointer to the beginning of the located substring, or
  * NULL if the substring is not found.
  */
 char *_strstr(char *haystack, char *needle)
 {
-	char *hpos, *npos;
+	char *xsub, *ysub;
 
 	do {
-		hpos = haystack;
-		npos = needle;
+		xsub = haystack;
+		ysub = needle;
 		do {
-			if (!*npos)
+			if (!*ysub)
 				return (haystack);
-			if (!*hpos)
+			if (!*xsub)
 				return (NULL);
-		} while (*hpos++ == *npos++);
+		} while (*xsub++ == *ysub++);
 	} while (*(++haystack));
 
 	return (NULL);
