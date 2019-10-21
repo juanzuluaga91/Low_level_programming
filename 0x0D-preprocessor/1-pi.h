@@ -1,5 +1,5 @@
-#ifndef PI_H
-#define PI_H
+#ifndef _1_PI_H_
+#define _1_PI_H_
 
 #define PI 1024
 
