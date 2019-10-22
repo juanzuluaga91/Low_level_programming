@@ -2,9 +2,9 @@
 #define DOG
 /**
  *struct dog - structure for a dog
- *@name: name
- *@age: age
- *@owner: owner
+ *@name: name of the dog
+ *@age: age of the dog
+ *@owner: owner of the do
  */
 typedef struct dog
 {
