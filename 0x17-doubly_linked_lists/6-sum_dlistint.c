@@ -1,4 +1,3 @@
-  
 #include "lists.h"
 /**
  * sum_dlistint - function to sum the elements of a doubly linked list
