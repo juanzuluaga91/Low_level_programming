@@ -13,7 +13,7 @@ void hash_table_delete(hash_table_t *ht)
 
 	if (!ht)
 		return;
-    x = 0;
+	x = 0;
 	for (x = 0; x < ht->size; x++)
 	{
 		current = ht->array[x];
