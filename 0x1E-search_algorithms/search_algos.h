@@ -3,6 +3,7 @@
 #define HEADER_H
 #include <stdlib.h>
 #include <stdio.h>
+#include <math.h>
 
 /**
  * struct listint_s - singly linked list
